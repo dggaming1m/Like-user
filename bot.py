@@ -90,7 +90,7 @@ async def like_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 "
         f"🆔 *UID:* `{uid}`
 "
-        f"⚠️ Verify within 10 minutes"""
+        f"⚠️ Verify within 10 minutes"
     )
     await update.message.reply_text(msg, reply_markup=keyboard, parse_mode='Markdown')
 
