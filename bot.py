@@ -83,7 +83,7 @@ async def like_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     ])
 
     msg = (
-        f"🎯 *Like Request*
+        f"""🎯 *Like Request*
 
 "
         f"👤 *Player:* {player_name}
@@ -144,7 +144,7 @@ async def process_verified_likes(app: Application):
                     result = "❌ Like failed or daily max limit reached."
                 else:
                     result = (
-                        f"✅ *Like Sent!*
+                        f"""✅ *Like Sent!*
 
 "
                         f"👤 *Player:* {player}
