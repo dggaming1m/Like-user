@@ -90,7 +90,7 @@ async def like_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 "
         f"🆔 *UID:* `{uid}`
 "
-        f"⚠️ Verify within 10 minutes"
+        f"⚠️ Verify within 10 minutes"""
     )
     await update.message.reply_text(msg, reply_markup=keyboard, parse_mode='Markdown')
 
@@ -155,7 +155,7 @@ async def process_verified_likes(app: Application):
 "
                         f"✨ *Added:* {added}
 "
-                        f"🇮🇳 *Now:* {after}"
+                        f"🇮🇳 *Now:* {after}"""
                     )
                     profiles.update_one({"user_id": user_id}, {"$set": {"last_used": datetime.utcnow()}}, upsert=True)
             except Exception as e:
